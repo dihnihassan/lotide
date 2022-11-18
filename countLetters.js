@@ -10,12 +10,20 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(string){
   
-  const counter = 0;
+  const counter = {};
   for (let letter of string){
-console.log(letter);
+// console.log(letter);
+   if (counter[letter]) {
+      counter[letter] += 1
+  } else {
+  counter[letter] = 1;
   }
-
 }
-countLetters("LightHouse Labs");
+console.log(counter);
+}
+
+
+
+countLetters("lighthouse labs");
 
 // a for of loop is needed 
