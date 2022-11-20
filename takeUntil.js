@@ -3,16 +3,16 @@ const takeUntil = function (array, dontKeep) {
   
   const thingsToKeep = [];
   for (let value of array) {
-    console.log("Let's take a look at value", value);
+    // console.log("Let's take a look at value", value);
     if (dontKeep(value)) {
-      console.log("We dont want that one");
-      console.log("What we found", thingsToKeep);
+      // console.log("We dont want that one");
+      // console.log("What we found", thingsToKeep);
       return thingsToKeep;
     }
-    console.log("Add to list");
+    // console.log("Add to list");
     thingsToKeep.push(value);
-    console.log("Lists so far", thingsToKeep);
-    console.log('-------');
+    // console.log("Lists so far", thingsToKeep);
+    // console.log('-------');
   }
 };
 
