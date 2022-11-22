@@ -2,14 +2,16 @@ const letterPositions = function (sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
     // console.log(sentence[i]);
-    let string = "";
-
-    if (sentence[i])
-      results.push([i]);
+    if (results[sentence[i]]) {
+      results[sentence[i]] += 1
+    } else {
+      results[sentence[i]] = 1
+    }
   }
-
+  console.log(results);
 }
-letterPositions("hello");
+
+letterPositions("lighthouse in the house");
 // console.log("hello");
 
 //  loops?
@@ -38,4 +40,4 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
-// assertArraysEqual(letterPositions("hello").e, [1]);
+// assertArraysEqual(letterPositions("hello"), [1]);

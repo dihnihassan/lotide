@@ -6,7 +6,8 @@ const without = function (source, itemsToRemove) {
     }
   }
   return results;
-};
+}
+
 
 let results = without([1, 2, 3, 4], [2, 4]);
 console.log(results);
