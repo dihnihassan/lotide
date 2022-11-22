@@ -21,9 +21,6 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-// assertArraysEqual("Lighthouse Labs", "Bootcamp");
-// assertArraysEqual(1, 1,);
-
 
 
 module.exports = assertArraysEqual;
