@@ -31,7 +31,7 @@ const middle = function (array) {
   if(array.length % 2 !== 0){
     const pos = array.length / 2; 
       const flooredPos = Math.floor(pos)
-      return array[flooredPos];
+      return [array[flooredPos]];
     }
 if (array.length % 2 === 0){
   const pos1 = array.length / 2;

@@ -5,10 +5,10 @@
 //     return console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
 //   }
 // };
-const assertEqual = require('./assertEqual');
+// const assertEqual = require('./assertEqual');
 
 const tail = function(arr) {
-  let newArray = arr.slice(0);
+  let newArray = arr.slice(arr.length - 1);
   return newArray;
 };
 // const words = ["Yo Yo", "Lighthouse", "Labs"];
