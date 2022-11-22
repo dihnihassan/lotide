@@ -2,5 +2,5 @@ const assertEqual = require('../assertEqual');
 
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail = words;
+tail(words);
 assertEqual(words.length, 3);
